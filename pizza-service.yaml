@@ -23,6 +23,8 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
+  zipkin:
+    base-url: http://localhost:9411
 
 server:
   port: 0
@@ -44,11 +46,11 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 # Swagger UI
-# http://localhost:9090/api/swagger-ui/index.html
+# http://localhost:8080/api/swagger-ui/index.html
 # 192.168.1.160:9090/api/swagger-ui/index.html
 
 # H2-Console
-# http://localhost:9090/api/h2-console
+# http://localhost:8080/api/h2-console
 # 192.168.1.160:9090/api/h2-console
 # Inserire come db:
 # jdbc:h2:file:~/data/PizzaServiceDB
