@@ -44,8 +44,6 @@ eureka:
     service-url:
       defaultZone: http://172.17.0.4:8761/eureka
 
-# Does not work.
-# Configurazione per il circuit breaker e il retry.
 #resilience4j:
 #  circuitbreaker:
 #    circuit-breaker-aspect-order: 1
