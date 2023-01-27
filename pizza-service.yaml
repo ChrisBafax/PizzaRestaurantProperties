@@ -24,7 +24,7 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
   zipkin:
-    base-url: http://127.0.0.1:9411
+    base-url: http://localhost:9411
   main:
     allow-circular-references: true
 
@@ -39,14 +39,13 @@ app:
     add-pizzas-routingkey: q.add-pizzas-to-restaurant
     pizzas-added-routingkey: q.pizzas-added-to-restaurant
     notify-pizzas-added-routingkey: q.notify-pizzas-added-to-restaurant
-    host: 172.17.0.1
 
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://172.17.0.4:8761/eureka
+      defaultZone: http://localhost:8761/eureka
 
 # Swagger UI
 # http://localhost:8080/api/swagger-ui/index.html
